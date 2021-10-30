@@ -1,7 +1,7 @@
-package business_logic;
+package com.epam.textparser.business_logic;
 
-import fileloader.FileLoader;
-import models.*;
+import com.epam.textparser.fileloader.FileLoader;
+import com.epam.textparser.models.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

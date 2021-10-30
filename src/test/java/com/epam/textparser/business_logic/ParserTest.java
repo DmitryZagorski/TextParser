@@ -1,10 +1,10 @@
-package business_logic;
+package com.epam.textparser.business_logic;
 
-import fileloader.FileLoader;
-import models.Paragraph;
-import models.Sentence;
-import models.SentencePart;
-import models.Text;
+import com.epam.textparser.fileloader.FileLoader;
+import com.epam.textparser.models.Paragraph;
+import com.epam.textparser.models.Sentence;
+import com.epam.textparser.models.SentencePart;
+import com.epam.textparser.models.Text;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

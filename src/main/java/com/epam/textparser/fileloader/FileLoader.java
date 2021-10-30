@@ -1,4 +1,4 @@
-package fileloader;
+package com.epam.textparser.fileloader;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package models;
+package com.epam.textparser.models;
 
 public interface Builder {
 

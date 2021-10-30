@@ -1,4 +1,4 @@
-package fileloader;
+package com.epam.textparser.fileloader;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
-package business_logic;
+package com.epam.textparser.business_logic;
 
-import models.Text;
+import com.epam.textparser.models.Text;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
