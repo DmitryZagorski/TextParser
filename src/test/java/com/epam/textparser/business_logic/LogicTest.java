@@ -1,5 +1,6 @@
 package com.epam.textparser.business_logic;
 
+import com.epam.textparser.models.SentencePart;
 import com.epam.textparser.models.Text;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ class LogicTest {
         Assertions.assertEquals(expectedFirstWord, actualFirstWord);
     }
 
-  /*  @Test
+   @Test
     void replaceElements() {
         //given
         Parser parser = new Parser();
@@ -30,11 +31,9 @@ class LogicTest {
         SentencePart sentencePart = parser.sentencePartParsing(s);
         //when
         logic.replaceElements(sentencePart);
-        String expectedWord = "eentancS";
+        String expectedWord = "eentencS";
         String actualWord = sentencePart.buildOriginalString();
         //then
         Assertions.assertEquals(expectedWord, actualWord);
-       // Assertions.assertTrue(expectedWord.equals(actualWord));
     }
-   */
 }
