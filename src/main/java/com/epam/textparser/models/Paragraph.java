@@ -26,5 +26,4 @@ public class Paragraph implements Builder {
         }
         return sb.toString();
     }
-
 }

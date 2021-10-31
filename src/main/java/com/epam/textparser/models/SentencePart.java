@@ -25,9 +25,4 @@ public abstract class SentencePart implements Builder {
         }
         return sb.toString();
     }
-
-    @Override
-    public int hashCode() {
-        return elements != null ? elements.hashCode() : 0;
-    }
 }
