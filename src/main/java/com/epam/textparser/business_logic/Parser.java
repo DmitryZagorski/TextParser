@@ -13,7 +13,7 @@ public class Parser {
     private static final Logger Log = LoggerFactory.getLogger(Parser.class.getSimpleName());
 
     public Text textParsing(String stringText) {
-        Log.info("Started textParser");
+        Log.info("Parsing of text '{}'", stringText);
         Text text = new Text();
         String regex = "\r\n";
         String[] paragraphs = stringText.split(regex);
