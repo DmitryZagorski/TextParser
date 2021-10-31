@@ -12,7 +12,7 @@ public class FileLoader {
     public String readFile() {
         Log.info("Creating classLoader.");
         String path = getPathOfFile();
-        int c = 0;
+        int c;
         StringBuilder stringBuilder = new StringBuilder();
         Log.info("Reading file...");
         try (FileReader reader = new FileReader(path)) {
