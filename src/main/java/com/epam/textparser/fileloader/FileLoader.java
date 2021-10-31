@@ -2,6 +2,8 @@ package com.epam.textparser.fileloader;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -27,7 +29,16 @@ public class FileLoader {
     }
 
     private String getPathOfFile(){
-        ClassLoader classLoader = getClass().getClassLoader();
-        return classLoader.getResource("SomeFile.txt").getPath();
+        String a = null;
+        try{
+            ClassLoader classLoader = getClass().getClassLoader();
+            a = classLoader.getResource("SomeFile.txt").getPath();
+        } catch (Exception e) {
+            Log.error("NullPointerException, cause file won't be found");
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
+        return a;
+
     }
 }
