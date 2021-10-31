@@ -2,7 +2,6 @@ package com.epam.textparser.fileloader;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -12,8 +11,7 @@ public class FileLoader {
 
     public String readFile() {
         Log.info("Creating classLoader.");
-        ClassLoader classLoader = getClass().getClassLoader();
-        String path = classLoader.getResource("SomeFile.txt").getPath();
+        String path = getPathOfFile();
         int c = 0;
         StringBuilder stringBuilder = new StringBuilder();
         Log.info("Reading file...");
@@ -26,5 +24,10 @@ public class FileLoader {
             System.err.println(ex.getMessage());
         }
         return stringBuilder.toString();
+    }
+
+    private String getPathOfFile(){
+        ClassLoader classLoader = getClass().getClassLoader();
+        return classLoader.getResource("SomeFile.txt").getPath();
     }
 }

@@ -14,7 +14,7 @@ public class Main {
          * Then it replace first and last letter in each word of text.
          */
 
-        Log.info("Start of program");;
+        Log.info("Start of program");
         Logic logic = new Logic();
 
         System.out.println("Original text: " + "\n");

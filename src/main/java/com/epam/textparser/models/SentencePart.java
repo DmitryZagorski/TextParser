@@ -30,14 +30,4 @@ public abstract class SentencePart implements Builder {
     public int hashCode() {
         return elements != null ? elements.hashCode() : 0;
     }
-
-//    public void replace() {
-//        String firstElement = elements.get(0);
-//        String lastElement = elements.get(elements.size() - 1);
-//
-//        if (elements.size() > 1) {
-//            elements.set(0, lastElement);
-//            elements.set(elements.size() - 1, firstElement);
-//        }
-//    }
 }

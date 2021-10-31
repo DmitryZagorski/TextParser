@@ -26,17 +26,4 @@ public class Text implements Builder {
         }
         return sb.toString();
     }
-
-//    public void replaceLettersInWords(){
-//        Parser parser = new Parser();
-//        for (Paragraph element : elements) {
-//            for (Sentence allElement : element.getAllElements()) {
-//                for (SentencePart sentencePart : allElement.elements) {
-//                    if (parser.getSymbolType(sentencePart.toString()).equals(SymbolType.WORD)){
-//                        sentencePart.replace();
-//                    }
-//                }
-//            }
-//        }
-//    }
 }
